@@ -1,0 +1,66 @@
+# Workstation metadata and Python caches.
+.DS_Store
+__pycache__/
+*.py[cod]
+# Private deployment state, credentials, and generated output.
+plan.env
+media.env
+ubuntu-user.yaml
+so-lab-ubuntu-user.yaml
+autounattend.xml
+build/
+state/
+evidence/
+*.jsonl
+*.log
+*.key
+*.pem
+*.p12
+*.pfx
+# Media, VM disks/backups, captures, and private archives.
+*.iso
+*.img
+*.qcow2
+*.vhd
+*.vhdx
+*.vdi
+*.vmdk
+*.vma*
+*.pcap
+*.pcapng
+*.evtx
+*.tar
+*.tar.gz
+*.tar.zst
+*.zip
+*.7z
+*.rar
+*.bak
+# Local customization, keys, caches and generated release artifacts.
+.env
+.env.*
+*.local.env
+.ssh/
+id_rsa*
+id_ed25519*
+id_ecdsa*
+id_dsa*
+*.credentials.json
+*.before-lock-fix.*
+.pytest_cache/
+.venv/
+venv/
+dist/
+# Unnecessary for Github Repository
+docs/video/
+docs/security-check/
+SECURITY.md
+PUBLIC_FILES.txt
+PROXMOX-RESET-FOR-YOUTUBE.md
+docs/
+CONTRIBUTING.md
+SECURITY.md
+SECURITY-ONION-PURPLE-LAB-GUIDE.md
+/scripts/
+/.github/
+/single-nic-3.3/validation/

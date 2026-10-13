@@ -1,0 +1,19 @@
+[Unit]
+Description=Deliberately vulnerable isolated HTTP training service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=nobody
+Group=nogroup
+ExecStart=/usr/bin/python3 /opt/so-lab/demo.py
+Restart=on-failure
+RestartSec=5s
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+RestrictAddressFamilies=AF_INET AF_UNIX
+
+[Install]
+WantedBy=multi-user.target

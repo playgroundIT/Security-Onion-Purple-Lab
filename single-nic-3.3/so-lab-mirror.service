@@ -1,0 +1,7 @@
+[Unit]
+Description=Reconcile isolated Security Onion lab TAP mirrors
+After=networking.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/lib/so-single-nic/mirror.sh
