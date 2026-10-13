@@ -975,11 +975,6 @@ bash lab.sh verify
 
 alone does **not** prove this end-to-end path.
 
-See:
-
-[SECURITY-ONION-PURPLE-LAB-GUIDE.md](SECURITY-ONION-PURPLE-LAB-GUIDE.md)
-
-for the complete validation procedure.
 
 ---
 
@@ -1006,31 +1001,7 @@ NIC on vmbr0
 Security Onion's management interface is the only lab VM interface connected to the home management network.
 
 ---
-
-# 13. Important Files
-
-```text
-single-nic-3.3/
-├── lab.sh
-├── lab.env
-├── RUNBOOK.md
-├── RESOURCES.md
-└── ...
-```
-
-Main documentation:
-
-```text
-README.md
-SECURITY-ONION-PURPLE-LAB-GUIDE.md
-CONTRIBUTING.md
-```
-
-Do not publish generated runtime state, credentials, VM images, installation media, packet captures, or private backups.
-
----
-
-# 14. Quick Build Overview
+# 13. Quick Build Overview
 
 ```bash
 # On Proxmox
